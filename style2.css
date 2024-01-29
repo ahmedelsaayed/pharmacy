@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+}body{
+}
+
+ html{
+    scroll-behavior: smooth;
+ } 
+ /* header */
+ header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:50px;
+    background-color: rgb(232, 225, 225);
+    height:max-content;
+
+    }
+    header h1{
+    font-size:40px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+ }header h1 i{
+    font-size: 50px;
+ }header span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ /* nav bar */
+ nav{
+    display: flex;
+    width: 95%;
+    margin:20px auto;
+    align-items: center;
+    justify-content:center;
+    z-index: 10;
+    margin-bottom: 0px;
+ }nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+ }nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }nav ul li a{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+ }nav ul li i{
+    font-size: 40px;
+ }nav ul li:hover{
+    transform: scale(1.09);
+    transition: 0.5s;
+ }
+ /*form */
+ header form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    gap:0px;
+    margin-bottom:20px;
+    text-align: center;
+ }header form input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 80%;
+    margin: auto;
+ }#video,#image{
+    padding:10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: transparent;
+ }label{
+    font-size: 20px;
+ }.btn{
+    background: transparent;
+    border: 2px solid #6c757d;
+    background-color: black;
+    color: aliceblue;
+    font-size: 19px;
+    cursor: pointer;
+    margin-top: 20px;
+ }.btn:hover{
+    background-color: white;
+    transform: scale(1.03);
+    transition: 0.5s;
+    color: black;
+ }@media screen and (max-width:480px){
+    nav ul li i{
+        font-size:25px;
+    }
+    nav ul li a{
+        font-size:25px;
+    }
+    body{
+        overflow: hidden;
+    }
+    header{
+        overflow: hidden;
+        height: 100vh;
+    }
+    form{
+        width: 80%;
+        margin: auto;
+    }nav{
+        width: max-content;
+        margin-top:30px;
+    }
+ }@media screen and  (min-width:481px) and (max-width:768px){
+    nav ul li i{
+        font-size:35px;
+    }
+    nav ul li a{
+        font-size:35px;
+    }
+    body{
+        overflow: hidden;
+    }
+    header{
+        overflow: hidden;
+        height:100vh;
+    }
+    form{
+        width: 60%;
+        margin: auto;
+    }nav{
+        width: max-content;
+        margin-top:60px;
+    }.btn{
+        width: 50%;
+    } nav ul{
+        gap:40px;
+    }
+ }
